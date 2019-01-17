@@ -11,40 +11,26 @@
 
     <!-- Login progress -->
 
-    <FrameLayout
-        android:id="@+id/frameLayout2"
-        android:layout_width="162dp"
+
+    <Button
+        android:id="@+id/btnCriarConta"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="#503DA2"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="64dp"
+        android:background="#FFFFFF"
+        android:drawableBottom="@color/colorAccent"
+        android:linksClickable="false"
+        android:text="Criar conta"
+        android:textAlignment="center"
+        android:textColor="#503DA2"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.827"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrarFacebook" />
 
-        <Button
-            android:id="@+id/btnCriarConta"
-            style="@android:style/Widget.Holo.Button"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="1sp"
-            android:background="#FFFFFF"
-            android:drawableBottom="@color/colorAccent"
-            android:linksClickable="false"
-            android:text="Criar conta"
-            android:textAlignment="center"
-            android:textColor="#503DA2"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.513"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
 
-    </FrameLayout>
 
     <ProgressBar
         android:id="@+id/login_progress"
@@ -117,41 +103,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="353dp"
+
+
+    <Button
+        android:id="@+id/btnEntrarFacebook"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="351dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginAll="3dp"
-        android:background="#503DA2"
+        android:layout_margin="1sp"
+        android:background="#FFFFFF"
+        android:drawableBottom="@color/colorAccent"
+        android:linksClickable="false"
+        android:text="Entrar com Facebook"
+        android:textAlignment="center"
+        android:textColor="#503DA2"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEntrar">
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
 
-        <Button
-            android:id="@+id/btnEntrarFacebook"
-            style="@android:style/Widget.Holo.Button"
-            android:layout_width="351dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="1sp"
-            android:background="#FFFFFF"
-            android:drawableBottom="@color/colorAccent"
-            android:linksClickable="false"
-            android:text="Entrar com Facebook"
-            android:textAlignment="center"
-            android:textColor="#503DA2"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.513"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
-
-    </FrameLayout>
 
     <ImageView
         android:id="@+id/imageView"
@@ -163,7 +138,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/reev_logo1"
         tools:srcCompat="@drawable/reev_logo1" />
 
     <TextView
@@ -186,7 +160,7 @@
         android:id="@+id/txt2"
         android:layout_width="106dp"
         android:layout_height="40dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="24dp"
         android:text="Login"
         android:textColor="#202020"
@@ -201,7 +175,6 @@
         android:layout_height="40dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="24dp"
-        android:padding="10sp"
         android:text="Senha"
         android:textColor="#202020"
         android:textSize="16sp"
@@ -221,24 +194,25 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        android:layout_marginRight="32dp" />
 
     <TextView
         android:id="@+id/txt4"
         android:layout_width="wrap_content"
         android:layout_height="23dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="84dp"
         android:text="Não tem uma conta?"
         android:textColor="#616161"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/frameLayout2"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintEnd_toStartOf="@+id/btnCriarConta"
+        app:layout_constraintHorizontal_bias="0.705"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrarFacebook"
         app:layout_constraintVertical_bias="1.0" />
 
 
