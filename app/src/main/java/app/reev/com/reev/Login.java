@@ -26,21 +26,19 @@ public class Login extends AppCompatActivity {
         EditText ema = findViewById(R.id.txtEmail);
         EditText sen = findViewById(R.id.txtPass);
 
-        if(ema.getText().toString().equals("123") && sen.getText().toString().equals("123")) {
-            int eml = 123;
+        if(ema.getText().toString().equals("admin") && sen.getText().toString().equals("admin")) {
+            boolean acesso = true;
 
 
-            if (eml == 123) {
+            if (acesso) {
                 Intent intent = new Intent(this, Selecao.class);
                 startActivity(intent);
             }
         }
         else if (sen.getText().toString().equals("") ){
-            Toast.makeText(Login.this, "Insira a senha", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Login.this, "Insira a e-mail e/ou senha", Toast.LENGTH_SHORT).show();
         }
-        else {
-            Toast.makeText(Login.this, "Insira o e-mail", Toast.LENGTH_SHORT).show();
-        }
+
 
     }
 }
