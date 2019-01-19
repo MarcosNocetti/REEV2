@@ -1,7 +1,9 @@
 package app.reev.com.reev;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class Selecao extends AppCompatActivity {
 
@@ -9,5 +11,11 @@ public class Selecao extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selecao);
+        getSupportActionBar().hide(); //hide the title bar
+    }
+
+    public void local(View view) {
+        Intent intent = new Intent(this, Localizacao.class);
+        startActivity(intent);
     }
 }
