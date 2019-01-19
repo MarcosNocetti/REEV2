@@ -16,7 +16,8 @@ public class Localizacao extends AppCompatActivity {
     }
 
     public void selecionarLoc(View view) {
-       Intent intent = new Intent(this, selecionarLocalizaca.class);
+        Intent intent = new Intent(this, selecionarLocalizacao.class);
         startActivity(intent);
     }
 }
+
