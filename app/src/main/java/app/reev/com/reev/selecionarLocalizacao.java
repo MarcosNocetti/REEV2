@@ -14,6 +14,7 @@ public class selecionarLocalizacao extends FragmentActivity implements OnMapRead
 
     private GoogleMap mMap;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

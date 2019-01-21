@@ -17,16 +17,16 @@
         style="@android:style/Widget.Holo.Button"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="56dp"
         android:background="#FFFFFF"
         android:drawableBottom="@color/colorAccent"
         android:linksClickable="false"
-        android:text="Criar conta"
+        android:text="@string/criar_conta"
         android:textAlignment="center"
         android:textColor="#503DA2"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintHorizontal_bias="0.875"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEntrarFacebook" />
 
@@ -47,18 +47,18 @@
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="350dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
+        android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt2">
+        app:layout_constraintTop_toBottomOf="@+id/txt1">
 
         <AutoCompleteTextView
             android:id="@+id/txtEmail"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:hint="E-mail"
+            android:hint="@string/e_mail"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:singleLine="true" />
@@ -67,24 +67,25 @@
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/senha"
-        android:layout_width="350dp"
-        android:layout_height="47dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt3"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
         app:passwordToggleEnabled="true">
 
         <EditText
             android:id="@+id/txtPass"
             android:layout_width="350dp"
-            android:layout_height="34dp"
+            android:layout_height="wrap_content"
             android:hint="Senha"
             android:imeActionId="6"
             android:imeOptions="actionUnspecified"
             android:inputType="textPassword"
             android:maxLines="1"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:importantForAutofill="no" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -97,7 +98,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
         android:background="#503DA2"
-        android:text="Entrar"
+        android:text="@string/entrar"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:onClick="selecao"
@@ -112,13 +113,13 @@
     <Button
         android:id="@+id/btnEntrarFacebook"
         style="@android:style/Widget.Holo.Button"
-        android:layout_width="351dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="#FFFFFF"
         android:drawableBottom="@color/colorAccent"
         android:linksClickable="false"
-        android:text="Entrar com Facebook"
+        android:text="@string/entrar_com_facebook"
         android:textAlignment="center"
         android:textColor="#503DA2"
         android:textStyle="bold"
@@ -135,6 +136,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
+        android:contentDescription="Logo da empresa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -142,13 +144,11 @@
 
     <TextView
         android:id="@+id/txt1"
-        android:layout_width="223dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:text="Faça o seu login"
         android:textColor="#202020"
         android:textSize="30sp"
@@ -157,37 +157,11 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/txt2"
-        android:layout_width="106dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="24dp"
-        android:text="Login"
-        android:textColor="#202020"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt1" />
-
-    <TextView
-        android:id="@+id/txt3"
-        android:layout_width="106dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="24dp"
-        android:text="Senha"
-        android:textColor="#202020"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
-
-    <TextView
         android:id="@+id/txtPassRecovey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
         android:linksClickable="true"
         android:text="Esqueci minha senha"
         android:textColor="#351C9C"
@@ -199,20 +173,17 @@
     <TextView
         android:id="@+id/txt4"
         android:layout_width="wrap_content"
-        android:layout_height="23dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="84dp"
         android:text="Não tem uma conta?"
         android:textColor="#616161"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/btnCriarConta"
-        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintHorizontal_bias="0.862"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEntrarFacebook"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrarFacebook" />
 
 
 </android.support.constraint.ConstraintLayout>

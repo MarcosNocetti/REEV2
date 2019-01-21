@@ -5,4 +5,8 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_selecionar_localizaca">Map</string>
     <string name="title_activity_selecionar_localizacao">Map</string>
+    <string name="criar_conta">Criar conta</string>
+    <string name="e_mail">E-mail</string>
+    <string name="entrar">Entrar</string>
+    <string name="entrar_com_facebook">Entrar com Facebook</string>
 </resources>
