@@ -31,16 +31,16 @@
             android:value="AIzaSyDXFedYwqUDSVPv2JHmOvNkwIBT6tyzFHM" />
 
         <activity
-            android:name=".selecionarLocalizacao"
+            android:name=".Telas.selecionarLocalizacao"
             android:label="@string/title_activity_selecionar_localizacao">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="app.reev.com.reev.Localizacao" />
+                android:value="app.reev.com.reev.Telas.Localizacao" />
         </activity>
-        <activity android:name=".Localizacao" />
-        <activity android:name=".Selecao" />
-        <activity android:name=".Login" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Telas.Localizacao" />
+        <activity android:name=".Telas.Selecao" />
+        <activity android:name=".Telas.Login" />
+        <activity android:name=".Telas.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,7 +48,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Tutorial"
+            android:name=".Telas.Tutorial"
             android:label="@string/title_activity_tutorial"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>

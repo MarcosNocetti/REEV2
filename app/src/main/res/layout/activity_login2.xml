@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layout_margin="1dp"
     android:gravity="center_horizontal"
-    tools:context=".Login">
+    tools:context=".Telas.Login">
 
     <!-- Login progress -->
 

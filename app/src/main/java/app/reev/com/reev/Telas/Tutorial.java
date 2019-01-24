@@ -1,8 +1,6 @@
-package app.reev.com.reev;
+package app.reev.com.reev.Telas;
 
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -17,8 +15,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.widget.Button;
-import android.widget.TextView;
+import app.reev.com.reev.R;
+import app.reev.com.reev.Telas.Login;
 
 public class Tutorial extends AppCompatActivity {
 
